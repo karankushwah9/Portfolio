@@ -1,0 +1,146 @@
+ /********************* Navbar tab ****************************/
+nav{
+    background-color: #fb26d4;
+}
+#Homebtn{
+    font-size: 20px;
+    padding-left: 4%;
+}
+.navbar-brand{
+    width: 50%;
+    font-size: 28px;
+    font-family: Rock Salt;
+    font-weight: 500;
+}
+#navbarNav{
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 15%;
+    justify-content: right;
+}
+.navbar-nav{
+    gap: 10%;
+}
+
+
+
+
+/************************** Home tab ***************************/
+:root {
+    --primary-color: #33383C;
+    --secondary-color: #33383C;
+}
+
+.maincontainer{
+    margin-left: 15%;
+    margin-top: 12%;
+}
+.maincontainer h1{
+    font-size: 50px;
+    color: #212121;
+}
+span{
+color: orange;
+}
+.maincontainer p{
+    color: #555;
+    line-height: 22Px ;
+}
+.animated_text h1 {
+    -webkit-text-stroke: 1px #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(var(--primary-color), var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: none;
+    background-position: -500px 0;
+    animation: backcolor 5s linear infinite;
+}
+
+@keyframes backcolor {   
+  0%{
+    -webkit-text-stroke: 1px #33383C;
+    background-position: 0 0;
+  }
+    100% {
+        -webkit-text-stroke: 1px #33383C;
+        background-position: 0 0;
+    }
+}
+
+
+/* *******Social media button's******* */ 
+.frame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 350px;
+    position: relative;
+     box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,
+     inset 0px 0px 0px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+     border-radius: 10px;
+  }
+  
+  .HomeBtn{
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
+    background: #e0e5ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,
+     inset 0px 0px 0px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+   transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    font-size: 16px;
+    color: rgba(42, 52, 84, 1);
+    text-decoration: none;
+  }
+  .HomeBtn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+  .avatarPart{
+    display: flex;
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 20%
+  }
+  .avatarPart img{
+
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50);
+    transition: bottom 1s, left 1s;
+  }
+  .avatarPart:hover .img_bg{
+    bottom: 8%;
+  }
+  .avatarPart:hover .img_avatar{
+    left: 45%;
+  }
